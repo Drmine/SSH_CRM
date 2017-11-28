@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-19 23:13:31 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.wq.entity.Customer" table="CUSTOMER">
+        <id name="custId" type="int">
+            <column name="CUSTID" />
+            <generator class="native" />
+        </id>
+        <property name="custName" type="java.lang.String">
+            <column name="CUSTNAME" />
+        </property>
+        <property name="custLevel" type="java.lang.String">
+            <column name="CUSTLEVEL" />
+        </property>
+    </class>
+</hibernate-mapping>
